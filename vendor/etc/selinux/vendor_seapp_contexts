@@ -1,0 +1,19 @@
+user=system seinfo=platform name=com.google.android.tv.assistant domain=assistant_led_app type=system_app_data_file
+user=_app seinfo=platform name=com.android.externalstorage domain=platform_app type=mt_aosp_app_data_file
+user=_app seinfo=platform name=com.android.managedprovisioning domain=platform_app type=mt_aosp_app_data_file
+user=_app seinfo=platform name=com.mediatek.tvinput domain=platform_app type=mt_cus_app_data_file
+user=_app seinfo=platform name=com.mediatek.autopair domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.tv.freeviewplay domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.wwtv.tvcenter domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.wwtv.setupwizard domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.wwtv.mediaplayer domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=fusion.android.tv.demo domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.alphonso.acr domain=platform_app type=mt_tvapk_app_data_file
+user=_app seinfo=platform name=com.oneplus.tv.launcher domain=platform_app type=op_tvapk_app_data_file
+user=_app seinfo=platform name=com.oneplus.tv.android.account domain=platform_app type=op_tvapk_app_data_file
+user=_app seinfo=platform name=com.mediatek.android.leanbacklauncher.partnercustomizer domain=platform_app type=op_tvapk_app_data_file
+user=_app seinfo=platform name=com.dolby.android.audio.service domain=platform_app type=op_tvapk_app_data_file
+user=_app seinfo=platform name=com.android.captiveportallogin domain=platform_app type=op_tvapk_app_data_file
+user=_app seinfo=platform name=com.android.systemui domain=platform_app type=op_tvapk_app_data_file
+user=system seinfo=platform name=com.google.android.tv.mdns.offload domain=googlecast_offload_app type=system_app_data_file
+user=_app seinfo=dolby domain=dolby_audio_service type=app_data_file

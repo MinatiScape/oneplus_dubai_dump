@@ -1,0 +1,190 @@
+<!--
+    Input:
+        device/oneplus/Dubai///common/configs/manifest.xml
+-->
+<manifest version="7.0" type="device" target-level="5">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IEffectsFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.4::ICameraProvider/external/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.drm</name>
+        <transport>hwbinder</transport>
+        <version>1.4</version>
+        <fqname>@1.3::ICryptoFactory/netflixdrm</fqname>
+        <fqname>@1.3::IDrmFactory/netflixdrm</fqname>
+        <fqname>@1.4::ICryptoFactory/playready</fqname>
+        <fqname>@1.4::IDrmFactory/playready</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IAllocator/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.4::IComposer/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@4.0::IMapper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IKeymasterDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.omx</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.memtrack</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMemtrack/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.cec</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IHdmiCec/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.input</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITvInput/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>mstar.hardware.mmdisp</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMmDisp/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.dolby.ms12</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMs12/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.graphics.externalbuffer</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IExternalbuffer/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.tv.networkproxy</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INetworkProxy/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.wifi.supplicant</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkSupplicantP2pIface/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.Mm.Mm.mtktvfapicustom</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkTvFApiCustom/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.OneplusTvApi</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOneplusTvApi/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.cmpb</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IHCmpb/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkdmservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkDmCommon/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkmtalservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkMediaPluginService/default</fqname>
+        <fqname>@1.0::IMtkPhotoService/default</fqname>
+        <fqname>@1.0::IMtkVssService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtkrm</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkRm/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvapi</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkTvApi/default</fqname>
+        <fqname>@1.0::IMtkTvApiBroadcast/default</fqname>
+        <fqname>@1.0::IMtkTvApiCI/default</fqname>
+        <fqname>@1.0::IMtkTvApiCec/default</fqname>
+        <fqname>@1.0::IMtkTvApiChannelList/default</fqname>
+        <fqname>@1.0::IMtkTvApiConfig/default</fqname>
+        <fqname>@1.0::IMtkTvApiEvent/default</fqname>
+        <fqname>@1.0::IMtkTvApiInputSrc/default</fqname>
+        <fqname>@1.0::IMtkTvApiMultiview/default</fqname>
+        <fqname>@1.0::IMtkTvApiPvrbrowser/default</fqname>
+        <fqname>@1.0::IMtkTvApiRating/default</fqname>
+        <fqname>@1.0::IMtkTvApiRecord/default</fqname>
+        <fqname>@1.0::IMtkTvApiScan/default</fqname>
+        <fqname>@1.0::IMtkTvApiTime/default</fqname>
+        <fqname>@1.0::IMtkTvApiTimeshift/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvapicustom</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkTvApiCustom/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.tv.mtktvfactory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkTvFApiAudio/default</fqname>
+        <fqname>@1.0::IMtkTvFApiDisplay/default</fqname>
+        <fqname>@1.0::IMtkTvFApiDisplayTest/default</fqname>
+        <fqname>@1.0::IMtkTvFApiInformation/default</fqname>
+        <fqname>@1.0::IMtkTvFApiInputSource/default</fqname>
+        <fqname>@1.0::IMtkTvFApiManager/default</fqname>
+        <fqname>@1.0::IMtkTvFApiNetwork/default</fqname>
+        <fqname>@1.0::IMtkTvFApiPeripheral/default</fqname>
+        <fqname>@1.0::IMtkTvFApiSystem/default</fqname>
+        <fqname>@1.0::IMtkTvFApiTv/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.wifidisplay</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMtkWifiDisplay/default</fqname>
+    </hal>
+    <sepolicy>
+        <version>34.0</version>
+    </sepolicy>
+    <kernel target-level="7"/>
+</manifest>

@@ -1,0 +1,30 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=OnePlus
+ro.product.odm.device=Dubai
+ro.product.odm.manufacturer=OnePlus
+ro.product.odm.model=D00
+ro.product.odm.name=OnePlusTV
+ro.odm.product.cpu.abilist=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=
+ro.odm.build.date=Thu Mar 20 16:45:03 CST 2025
+ro.odm.build.date.utc=1742460303
+ro.odm.build.fingerprint=OnePlus/OnePlusTV/Dubai:14/UTT1.240928.001/2503121853:user/release-keys
+ro.odm.build.id=UTT1.240928.001
+ro.odm.build.tags=release-keys
+ro.odm.build.type=user
+ro.odm.build.version.incremental=2503121853
+ro.odm.build.version.release=14
+ro.odm.build.version.release_or_codename=14
+ro.odm.build.version.sdk=34
+####################################
+# from variable ADDITIONAL_ODM_PROPERTIES
+####################################
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+# end of file
+

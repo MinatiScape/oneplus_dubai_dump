@@ -1,0 +1,40 @@
+
+on property:sys.optv.commonSvc.target=*
+    setprop vendor.optv.commonSvc.target ${sys.optv.commonSvc.target}
+
+on property:vendor.optv.commonSvc.target=*
+    start commonService
+
+on property:vendor.optv.commonSvc.target=stop
+    stop commonService
+
+service commonService /system/bin/commonService.sh ${vendor.optv.commonSvc.target}
+    user root
+    group system shell
+    console
+    oneshot
+    seclabel u:r:commonSvc:s0
+#    class main
+
+
+on property:persist.sys.logcollect.debug=0
+    stop btlogService
+
+#sys.optv.btlogSvc.target=start is set in logcollection.sh after mkdir
+on property:sys.optv.btlogSvc.target=*
+    setprop vendor.optv.btlogSvc.target ${sys.optv.btlogSvc.target}
+
+on property:vendor.optv.btlogSvc.target=start
+    start btlogService
+
+on property:vendor.optv.btlogSvc.target=stop
+    stop btlogService
+
+#service btlogService /vendor/bin/picus -p /data/log/btlog/
+#service btlogService /vendor/bin/picus -p /data/vendor/btlog/
+service btlogService /system/bin/picus_sys -s 5242880 -p /data/log/1/btlog/
+    user root
+    group system root bluetooth
+    console
+    seclabel u:r:btlogSvc:s0
+
