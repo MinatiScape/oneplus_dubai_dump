@@ -1,0 +1,7 @@
+#line 1 "vendor/google_gtvs/sepolicy/tv/property_contexts"
+# used by mediashell
+ro.odm.cast.ssid_suffix u:object_r:odm_cast_prop:s0
+# TODO(359400735): Remove after root cause the av sync problem.
+odm.cast.audio_latency_adjust_ms u:object_r:odm_cast_prop:s0
+#line 1 "out/soong/.intermediates/system/sepolicy/contexts/product_property_contexts/android_common/gen/newline"
+
